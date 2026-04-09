@@ -273,7 +273,7 @@ local ANALYTICS_TOKEN = "05de7f9fd320d3b8428cd1c77014a337b85b6c8efee2c5914f5ab57
 
 local reporter = nil
 if not requestsDisabled and not useStudio then
-	local fetchSuccess, fetchResult = pcall((game :: any).HttpGet, game, "https://raw.githubusercontent.com/SiriusSoftwareLtd/Rayfield/refs/heads/main/reporter.lua")
+	local fetchSuccess, fetchResult = pcall((game :: any).HttpGet, game, "https://raw.githubusercontent.com/NevercryNever/Define/refs/heads/main/reporter.lua")
 	if fetchSuccess and #fetchResult > 0 then
 		local execSuccess, Analytics = pcall(function()
 			return (loadstring(fetchResult) :: any)()
@@ -762,7 +762,7 @@ end
 
 do
 	local AssetPath = RayfieldFolder.."/Assets"
-	local AssetBaseURL = "https://github.com/SiriusSoftwareLtd/Rayfield/blob/main/assets/"
+	local AssetBaseURL = "https://github.com/NevercryNever/Define/tree/main/assets"
 
 	local assetFiles = {
 		["111263549366178"] = AssetBaseURL.."111263549366178.png?raw=true",
@@ -898,7 +898,7 @@ Rayfield.DisplayOrder = 100
 LoadingFrame.Version.Text = Release
 
 -- Thanks to Latte Softworks for the Lucide integration for Roblox
-local Icons = useStudio and require(script.Parent.icons) or loadWithTimeout('https://raw.githubusercontent.com/SiriusSoftwareLtd/Rayfield/refs/heads/main/icons.lua')
+local Icons = useStudio and require(script.Parent.icons) or loadWithTimeout('https://raw.githubusercontent.com/NevercryNever/Define/refs/heads/main/icons.lua')
 -- Variables
 
 local CFileName = nil
