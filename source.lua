@@ -10,6 +10,8 @@
 
 ]]
 
+local Rayfield = (function()
+
 if debugX then
 	warn('Initialising Rayfield')
 end
@@ -4095,3 +4097,4 @@ task.delay(4, function()
 end)
 
 return RayfieldLibrary
+end)()
