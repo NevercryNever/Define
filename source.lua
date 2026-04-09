@@ -764,7 +764,7 @@ end
 
 do
 	local AssetPath = RayfieldFolder.."/Assets"
-	local AssetBaseURL = "https://github.com/NevercryNever/Define/tree/main/assets"
+	local AssetBaseURL = "https://github.com/NevercryNever/Define/tree/main/assets/"
 
 	local assetFiles = {
 		["111263549366178"] = AssetBaseURL.."111263549366178.png?raw=true",
